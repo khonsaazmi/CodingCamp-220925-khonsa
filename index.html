@@ -12,22 +12,38 @@
         <script
             src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
-    <body>
+    <body class="body">
         <!-- Header Content -->
         <header class="main-header fixed top-0 left-0 right-0 z-10">
             <!-- logo website -->
-            <div class="logo"></div>
+            <div class="flex items-center gap-[20px]">
+                <div class="logo"></div>
 
+                <!-- title website -->
+                <div class="flex flex-col text">
+                    <h1 class="text-[30px] font-bold flex items-center">Hongie
+                        Tech Website</h1>
+                    <h2>Turning Clicks into Connections</h2>
+                </div>
+            </div>
             <!-- navigation menu -->
             <nav>
                 <ul class="flex h-[100%] items-center gap-[8px]">
-                    <li><a class="border p-[8px] rounded"
+                    <li><a
+                            class="border p-[8px] rounded hover:bg-amber-300 hover:text-black"
+                            onclick="changeNavColor(event)"
                             href="#home">Home</a></li>
-                    <li><a class="border p-[8px] rounded"
+                    <li><a
+                            class="border p-[8px] rounded hover:bg-amber-300 hover:text-black"
+                            onclick="changeNavColor(event)"
                             href="#profile">Profile</a></li>
-                    <li><a class="border p-[8px] rounded"
+                    <li><a
+                            class="border p-[8px] rounded hover:bg-amber-300 hover:text-black"
+                            onclick="changeNavColor(event)"
                             href="#portfolio">Portofolio</a></li>
-                    <li><a class="border p-[8px] rounded"
+                    <li><a
+                            class="border p-[8px] rounded hover:bg-amber-300 hover:text-black"
+                            onclick="changeNavColor(event)"
                             href="#message-us">Message Us</a></li>
                 </ul>
             </nav>
@@ -36,12 +52,20 @@
         <hr>
 
         <!-- Main Content -->
-        <main>
+        <main class="mx-auto max-w-[800px]">
             <!-- Home Section -->
             <section id="home"
-                class="min-h-[80vh] flex flex-col justify-center items-center gap-[20px]">
-                <h1 class="text-[30px]">Welcome <strong><span
-                            id="username"></span></strong> to My Portfolio</h1>
+                class="min-h-[60vh] flex flex-col items-center justify-center gap-[20px] pt-[100px]">
+                <h1 class="text-[30px] animate-pulse-slow">Welcome <strong><span
+                            id="username"></span></strong> to Our Website</h1>
+                <p class="text-[18px]">This website is a mini project for a tech
+                    company. It
+                    contains information about the company and its services.</p>
+                <p class="text-[18px]">The company is a leading provider of
+                    technology solutions
+                    and services. It was founded in 2025 by a group of
+                    experienced professionals with a passion for technology and
+                    innovation.</p>
             </section>
             <hr>
             <!-- Profile Section -->
@@ -91,7 +115,7 @@
                     </div>
                     <!-- Submit Button -->
                     <button type="submit" onclick="validateForm()"
-                        class="bg-blue-500 text-white font-bold py-2 px-4 border p-[8px] rounded hover:bg-blue-600">Send</button>
+                        class="bg-sky-700 text-white font-bold py-2 px-4 border p-[8px] rounded hover:bg-amber-300 hover:text-black">Send</button>
 
                 </form>
             </section>
