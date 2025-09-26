@@ -1,4 +1,4 @@
-welcomeMessage();
+// welcomeMessage();
 
 // Welcome Message
 function welcomeMessage() {
@@ -26,4 +26,15 @@ function validateForm() {
     } else {
         alert(`Thanks, ${name}! Form submitted successfully!`); // Thank user by name
     }
+}
+
+let latestAnchor;
+function changeNavColor(event) {
+    let navItems = document.querySelectorAll("nav li");
+    navItems.forEach(item => item.classList.remove("bg-amber-300", "text-black"));
+    if (latestAnchor) {
+        latestAnchor.classList.remove("bg-amber-300", "text-black");
+    }
+    event.target.classList.add("bg-amber-300", "text-black");
+    latestAnchor = event.target;
 }
