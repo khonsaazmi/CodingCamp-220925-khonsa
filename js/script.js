@@ -17,10 +17,11 @@ function validateForm() {
     // Get form values
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
     let message = document.getElementById("message").value;
 
     // Simple validation
-    if (name === "" || email === "" || message === "") {
+    if (name === "" || email === "" || phone === "" || message === "") {
         alert("Please fill in all fields."); // Alert if any field is empty
     } else {
         alert(`Thanks, ${name}! Form submitted successfully!`); // Thank user by name
