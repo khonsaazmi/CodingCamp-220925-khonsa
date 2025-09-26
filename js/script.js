@@ -1,4 +1,4 @@
-// welcomeMessage();
+welcomeMessage();
 
 // Welcome Message
 function welcomeMessage() {
