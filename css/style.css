@@ -1,16 +1,25 @@
 .main-header {  
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background-color: lightgrey;
+    padding: 20px;
+    background-color: #183B4E !important; 
+    color: #F5EEDC !important;
 }
 
 .logo {
     height: 75px;
     width: 75px;    
     background-color: darkgrey;
+    border-color: #F5EEDC;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 50%;
-    background-image: url(https://picsum.photos/200);
-    background-size: cover;
+    background-image: url("../img/logo.png");
+    background-size: 150%;
     background-position: center;
+}
+
+.body {
+    background-color: #272727;
+    color: #F5EEDC;
 }
